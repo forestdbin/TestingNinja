@@ -6,15 +6,14 @@ add_subdirectory(
         ${CMAKE_BINARY_DIR}/googletest
 )
 
-add_executable(foo_test_run foo_test.cpp)
-
+add_executable(Gtest_tests_run foo_test.cpp)
 target_link_libraries(
-        foo_test_run
+        Gtest_tests_run
         PRIVATE GTest::gtest_main
 )
 
 # include(CTest)
 enable_testing()
-# add_test(foo_test foo_test_run)
+# add_test(Gtest_tests Gtest_tests_run)
 include(GoogleTest)
-gtest_discover_tests(foo_test_run)
+gtest_discover_tests(Gtest_tests_run)

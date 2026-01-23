@@ -24,6 +24,13 @@ git add .
 git commit -m 'Init commit'
 ```
 
+```bash
+cd boost_1_90_0
+./bootstrap.sh
+./b2
+./b2 install --prefix=../../lib/boost/default
+```
+
 ## Catch2
 
 ```bash
