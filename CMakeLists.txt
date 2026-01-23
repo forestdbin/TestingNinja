@@ -4,4 +4,6 @@ project(testing)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(foo main.cpp)
+add_executable(foo_run main.cpp)
+
+add_subdirectory(Gtest_tests)
