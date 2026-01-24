@@ -8,3 +8,4 @@ add_executable(foo_run main.cpp)
 
 add_subdirectory(Gtest_tests)
 add_subdirectory(Boost_tests)
+add_subdirectory(Catch_tests)

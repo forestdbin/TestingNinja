@@ -40,6 +40,13 @@ cd Catch2
 git checkout v3.12.0
 ```
 
+```bash
+cd Catch2
+cmake -S . -B out
+cmake --build out
+cmake --install out --prefix=../../lib/Catch2/default
+```
+
 ## doctest
 
 ```bash
