@@ -55,3 +55,17 @@ git clone https://github.com/doctest/doctest.git
 cd doctest
 git checkout v2.4.12
 ```
+
+## benchmark
+
+```bash
+cd shared/source
+git clone https://github.com/google/benchmark.git
+cd benchmark
+git checkout v1.9.5
+
+cmake -S . -B build -DBENCHMARK_DOWNLOAD_DEPENDENCIES=on -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+cmake -E chdir build ctest
+cmake --install build --prefix=../../lib/benchmark
+```
